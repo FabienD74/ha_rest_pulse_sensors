@@ -1,0 +1,23 @@
+
+rest:
+##################################################################
+  - scan_interval: 120
+    headers:
+      X-API-TOKEN: "f3b0243219206db7ad93a0cdb869cdc4f1cc3a3782feda7cb0563f63caa1ccc3"
+    resource:  "http://ct-pulse:7655/api/state"
+    verify_ssl: false
+
+    sensor:
+      - name: "Pulse Proxmox Nodes"
+        value_template: >
+          {%- set ns = namespace() -%}
+          {%- set ns.cpt = 0 -%}
+
+          {%- if value_json is defined -%}
+            {%- if value_json.nodes is defined -%}
+              {%- set ns.cpt = value_json.nodes|count -%}
+            {%- else -%}
+            {%- endif -%}
+          {%- else -%}
+          {%- endif -%}
+          {{ ns.cpt}}

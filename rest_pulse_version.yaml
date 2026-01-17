@@ -1,0 +1,30 @@
+rest:
+ ##################################################################
+  - scan_interval: 120
+    headers:
+      X-API-TOKEN: "f3b0243219206db7ad93a0cdb869cdc4f1cc3a3782feda7cb0563f63caa1ccc3"
+    resource:  "http://ct-pulse:7655/api/version"
+    verify_ssl: false
+
+    sensor:
+      - name: "Pulse_version"
+        value_template: "{{ value_json.version }}"
+        json_attributes:
+          - version
+          - updateAvailable
+          - latestVersion
+          - deploymentType
+# API returns the following info:
+#  "version": "5.0.16",
+#  "buildTime": "release",
+#  "build": "release",
+#  "goVersion": "go1.24.11",
+#  "runtime": "go",
+#  "channel": "stable",
+#  "isDocker": true,
+#  "isSourceBuild": false,
+#  "isDevelopment": false,
+#  "deploymentType": "docker
+#  "updateAvailable": false,
+#  "latestVersion": "v5.0.16
+#  "containerized": false

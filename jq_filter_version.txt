@@ -1,0 +1,6 @@
+{pulse: {
+        version: .version ,
+        latestVersion: .latestVersion,
+        build: .build
+        }
+}

@@ -1,0 +1,631 @@
+ ===== BEGIN JSON ===== 
+{
+        "pulse": {
+                "version": "5.0.16",
+                "latestVersion": "v5.0.16",
+                "build": "release"
+        }
+}
+{
+        "node": [
+                {
+                        "id": "MyCluster-proxmox1",
+                        "node": "proxmox1",
+                        "name": "proxmox1",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "offline"
+                },
+                {
+                        "id": "MyCluster-proxmox2",
+                        "node": "proxmox2",
+                        "name": "proxmox2",
+                        "cpu": 0.0863010137769691,
+                        "mem": 23237758976,
+                        "maxmem": 33526648832,
+                        "disk": {
+                                "total": 52190515200,
+                                "used": 11139497984,
+                                "free": 38777073664,
+                                "usage": 21.343912665571846
+                        },
+                        "status": "online"
+                },
+                {
+                        "id": "MyCluster-proxmox3",
+                        "node": "proxmox3",
+                        "name": "proxmox3",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "offline"
+                }
+        ],
+        "vm": [
+                {
+                        "id": "proxmox2.home:proxmox2:100",
+                        "name": "vm-debian-01",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 4294967296,
+                        "disk": {
+                                "total": 8589934592,
+                                "used": 0,
+                                "free": 8589934592,
+                                "usage": 0
+                        },
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:101",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:102",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:103",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:105",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:106",
+                        "name": "vm-ollama1",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 5242880000,
+                        "disk": {
+                                "total": 15032385536,
+                                "used": 0,
+                                "free": 15032385536,
+                                "usage": 0
+                        },
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:108",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:110",
+                        "name": "vm-debian-02",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 4294967296,
+                        "disk": {
+                                "total": 17179869184,
+                                "used": 0,
+                                "free": 17179869184,
+                                "usage": 0
+                        },
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:112",
+                        "name": "vm-hadb-prd",
+                        "cpu": 0.00378665717108131,
+                        "mem": 1260539904,
+                        "maxmem": 2147483648,
+                        "disk": {
+                                "total": 12018823168,
+                                "used": 4046749696,
+                                "free": 7972073472,
+                                "usage": 33.67009930534989
+                        },
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:113",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disk": null,
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:116",
+                        "name": "vm-gtfsdb",
+                        "cpu": 0.00206544936604435,
+                        "mem": 1569771520,
+                        "maxmem": 2147483648,
+                        "disk": {
+                                "total": 18100506624,
+                                "used": 11437326336,
+                                "free": 6663180288,
+                                "usage": 63.18787961898762
+                        },
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:118",
+                        "name": "vm-ha-prd",
+                        "cpu": 0.0137696624402957,
+                        "mem": 4490092544,
+                        "maxmem": 6442450944,
+                        "disk": {
+                                "total": 16072474624,
+                                "used": 11960877056,
+                                "free": 4111597568,
+                                "usage": 74.4183912920266
+                        },
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:119",
+                        "name": "vm-ha-dev",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 6442450944,
+                        "disk": {
+                                "total": 12884901888,
+                                "used": 0,
+                                "free": 12884901888,
+                                "usage": 0
+                        },
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:120",
+                        "name": "vm-ha-docker",
+                        "cpu": 0.00516362341511088,
+                        "mem": 987553792,
+                        "maxmem": 2116026368,
+                        "disk": {
+                                "total": 17956855808,
+                                "used": 4311416832,
+                                "free": 13645438976,
+                                "usage": 24.00986496800409
+                        },
+                        "status": "running"
+                }
+        ],
+        "lxc": [
+                {
+                        "id": "proxmox2.home:proxmox3:104",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disks": [
+                                {
+                                        "total": 0,
+                                        "used": 0,
+                                        "free": 0,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs"
+                                }
+                        ],
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:107",
+                        "name": "ct-whisper",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 4294967296,
+                        "disks": [
+                                {
+                                        "total": 4294967296,
+                                        "used": 0,
+                                        "free": 4294967296,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-107-disk-0"
+                                }
+                        ],
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:109",
+                        "name": "ct-docmost",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 1073741824,
+                        "disks": [
+                                {
+                                        "total": 4294967296,
+                                        "used": 0,
+                                        "free": 4294967296,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-109-disk-0"
+                                }
+                        ],
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:111",
+                        "name": "ct-heimdall",
+                        "cpu": 0.0000538166762455717,
+                        "mem": 44392448,
+                        "maxmem": 268435456,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 1253965824,
+                                        "free": 893517824,
+                                        "usage": 58.392333984375,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-111-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:115",
+                        "name": "ct-tst",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 536870912,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 0,
+                                        "free": 2147483648,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-115-disk-0"
+                                }
+                        ],
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:117",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disks": [
+                                {
+                                        "total": 0,
+                                        "used": 0,
+                                        "free": 0,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs"
+                                }
+                        ],
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:200",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disks": [
+                                {
+                                        "total": 0,
+                                        "used": 0,
+                                        "free": 0,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs"
+                                }
+                        ],
+                        "status": "unknown"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:201",
+                        "name": "ct-pbs-02",
+                        "cpu": 0.000161450028736715,
+                        "mem": 131571712,
+                        "maxmem": 536870912,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 1206910976,
+                                        "free": 940572672,
+                                        "usage": 56.201171875,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-201-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:205",
+                        "name": "ct-pgadmin",
+                        "cpu": 0.0000538166762455717,
+                        "mem": 42287104,
+                        "maxmem": 536870912,
+                        "disks": [
+                                {
+                                        "total": 4294967296,
+                                        "used": 1411252224,
+                                        "free": 2883715072,
+                                        "usage": 32.8582763671875,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-205-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:206",
+                        "name": "ct-rsyslog",
+                        "cpu": 0,
+                        "mem": 34144256,
+                        "maxmem": 536870912,
+                        "disks": [
+                                {
+                                        "total": 6442450944,
+                                        "used": 3285057536,
+                                        "free": 3157393408,
+                                        "usage": 50.990804036458336,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-206-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:207",
+                        "name": "ct-gotify",
+                        "cpu": 0.0000538166762455717,
+                        "mem": 34238464,
+                        "maxmem": 268435456,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 998113280,
+                                        "free": 1149370368,
+                                        "usage": 46.478271484375,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-207-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:208",
+                        "name": "ct-grafana",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 1073741824,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 0,
+                                        "free": 2147483648,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-208-disk-0"
+                                }
+                        ],
+                        "status": "stopped"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:209",
+                        "name": "ct-dhcp-02",
+                        "cpu": 0.000269083381227858,
+                        "mem": 24551424,
+                        "maxmem": 268435456,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 800456704,
+                                        "free": 1347026944,
+                                        "usage": 37.274169921875,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-209-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:210",
+                        "name": "ct-pulse",
+                        "cpu": 0.0492960754409437,
+                        "mem": 443879424,
+                        "maxmem": 536870912,
+                        "disks": [
+                                {
+                                        "total": 6442450944,
+                                        "used": 3969122304,
+                                        "free": 2473328640,
+                                        "usage": 61.60888671875,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-210-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox2:211",
+                        "name": "ct-apt-cache",
+                        "cpu": 0,
+                        "mem": 29356032,
+                        "maxmem": 268435456,
+                        "disks": [
+                                {
+                                        "total": 2147483648,
+                                        "used": 1473642496,
+                                        "free": 673841152,
+                                        "usage": 68.621826171875,
+                                        "mountpoint": "/",
+                                        "type": "rootfs",
+                                        "device": "vm_storage2_01:subvol-211-disk-0"
+                                }
+                        ],
+                        "status": "running"
+                },
+                {
+                        "id": "proxmox2.home:proxmox1:299",
+                        "name": "",
+                        "cpu": 0,
+                        "mem": 0,
+                        "maxmem": 0,
+                        "disks": [
+                                {
+                                        "total": 0,
+                                        "used": 0,
+                                        "free": 0,
+                                        "usage": 0,
+                                        "mountpoint": "/",
+                                        "type": "rootfs"
+                                }
+                        ],
+                        "status": "unknown"
+                }
+        ],
+        "host": [
+                {
+                        "id": "7a2d0e80-76f0-471c-b1ba-d31c96d7b11a",
+                        "name": "ct-pulse",
+                        "cpu": 8.724832214521761,
+                        "memory": {
+                                "total": 536870912,
+                                "used": 434138112,
+                                "free": 15241216,
+                                "usage": 80.8645248413086
+                        },
+                        "status": "online"
+                },
+                {
+                        "id": "71ebf7dd-2f87-4257-85a8-71dc9891bf13",
+                        "name": "vm-ha-docker",
+                        "cpu": 1.0033444815597752,
+                        "memory": {
+                                "total": 2037702656,
+                                "used": 634253312,
+                                "free": 1130831872,
+                                "usage": 31.125901030380753,
+                                "swapTotal": 611209216
+                        },
+                        "status": "online"
+                }
+        ],
+        "storage": [
+                {
+                        "id": "MyCluster-cluster-NFS_Qnap_Proxmox_Backup",
+                        "name": "NFS_Qnap_Proxmox_Backup",
+                        "status": "available",
+                        "total": 2624299991040,
+                        "used": 868477566976
+                },
+                {
+                        "id": "MyCluster-cluster-NFS_Qnap_Proxmox_Iso",
+                        "name": "NFS_Qnap_Proxmox_Iso",
+                        "status": "available",
+                        "total": 2624299991040,
+                        "used": 868477566976
+                },
+                {
+                        "id": "MyCluster-cluster-NFS_Qnap_Proxmox_Others",
+                        "name": "NFS_Qnap_Proxmox_Others",
+                        "status": "available",
+                        "total": 2624299991040,
+                        "used": 868477566976
+                },
+                {
+                        "id": "MyCluster-cluster-PBS_01_QNAP",
+                        "name": "PBS_01_QNAP",
+                        "status": "inactive",
+                        "total": 0,
+                        "used": 0
+                },
+                {
+                        "id": "MyCluster-cluster-PBS_02_QNAP",
+                        "name": "PBS_02_QNAP",
+                        "status": "available",
+                        "total": 2624299991040,
+                        "used": 868477566976
+                },
+                {
+                        "id": "MyCluster-cluster-SMB_Proxmox3_Storage",
+                        "name": "SMB_Proxmox3_Storage",
+                        "status": "inactive",
+                        "total": 0,
+                        "used": 0
+                },
+                {
+                        "id": "proxmox2.home-proxmox2-local",
+                        "name": "local",
+                        "status": "available",
+                        "total": 52190515200,
+                        "used": 11139497984
+                },
+                {
+                        "id": "proxmox2.home-proxmox2-vm_storage",
+                        "name": "vm_storage",
+                        "status": "disabled",
+                        "total": 0,
+                        "used": 0
+                },
+                {
+                        "id": "proxmox2.home-proxmox2-vm_storage2_01",
+                        "name": "vm_storage2_01",
+                        "status": "available",
+                        "total": 196274348032,
+                        "used": 144885391360
+                },
+                {
+                        "id": "proxmox2.home-proxmox2-vm_storage2_02",
+                        "name": "vm_storage2_02",
+                        "status": "available",
+                        "total": 461977419776,
+                        "used": 2469888
+                },
+                {
+                        "id": "pbs-ct-pbs-02.home-Local",
+                        "name": "Local",
+                        "status": "available",
+                        "total": 2147483648,
+                        "used": 1206910976
+                },
+                {
+                        "id": "pbs-ct-pbs-02.home-NFS_Qnap",
+                        "name": "NFS_Qnap",
+                        "status": "available",
+                        "total": 2624299991040,
+                        "used": 868477566976
+                }
+        ]
+}
+ ===== END JSON ===== 
